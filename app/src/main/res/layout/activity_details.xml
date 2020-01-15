@@ -8,9 +8,76 @@
     android:orientation="vertical">
 
     <WebView
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
         android:id="@+id/webview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textColorHint="#9EFF2211"
+        android:hint="nhập bình luận..."
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_send_black_24dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+            <TextView
+                android:textSize="15sp"
+                android:text="Gửi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_save_black_24dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:textSize="15sp"
+                android:text="Lưu tin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_share_black_24dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"/>
+            <TextView
+                android:textSize="15sp"
+                android:text="Chia sẻ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

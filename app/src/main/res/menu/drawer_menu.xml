@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+           android:id="@+id/nav_Login"
+           android:icon="@drawable/ic_account_circle_black_24dp"
+           android:title="Đăng nhập" />
+    </group>
+    <item android:title="Danh mục">
+        <menu>
+            <item
+               android:id="@+id/nav_Infor"
+               android:icon="@drawable/online"
+               android:title="Công nghệ thông tin" />
+            <item
+               android:id="@+id/nav_healthy"
+               android:icon="@drawable/apple"
+               android:title="Sức khỏe" />
+            <item
+               android:id="@+id/nav_Car"
+               android:icon="@drawable/car"
+               android:title="Ô tô" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_message"
+                android:icon="@drawable/ic_message_black_24dp"
+                android:title="Message" />
+            <item
+                android:id="@+id/nav_chat"
+                android:icon="@drawable/ic_chat_black_24dp"
+                android:title="Chat" />
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="Send" />
+        </menu>
+    </item>
+</menu>

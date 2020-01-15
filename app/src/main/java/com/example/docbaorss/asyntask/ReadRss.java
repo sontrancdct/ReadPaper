@@ -56,15 +56,12 @@ public class ReadRss extends AsyncTask<String, Void, ArrayList<Paper>> {
                 arrPaper.setDetails(element.select("description").text().substring(element.select("description").text().indexOf("<br />")+6));
 
                 papers.add(arrPaper);
-
-
             }
 
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return papers;
     }
 

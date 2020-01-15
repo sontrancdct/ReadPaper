@@ -48,7 +48,7 @@ public class EntertainmentFragment extends Fragment {
         });
 
 
-        readRss.getDataFromUrl("https://vnexpress.net/rss/cuoi.rss");
+        readRss.getDataFromUrl("https://cdn.24h.com.vn/upload/rss/cuoi24h.rss");
         listView.setOnItemClickListener((parent, view1, position, id) -> {
             Intent intent = new Intent(getContext(), DetailsActivity.class);
             intent.putExtra("link", papers.get(position).link);
